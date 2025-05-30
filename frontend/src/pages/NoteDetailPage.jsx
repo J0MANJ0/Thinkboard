@@ -47,6 +47,7 @@ const NoteDetailPage = () => {
     const handleSave = async () => {
         if (!note.title.trim() || !note.content.trim()) {
             toast.error('Please provide all fields')
+            return
         }
         setSaving(true)
 
