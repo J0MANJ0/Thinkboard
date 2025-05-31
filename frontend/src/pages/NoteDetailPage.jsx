@@ -29,7 +29,6 @@ const NoteDetailPage = () => {
 
     }, [id])
 
-    console.log(note)
 
     const handleDelete = async () => {
         if (!window.confirm('Do you want to delete this note?')) return
